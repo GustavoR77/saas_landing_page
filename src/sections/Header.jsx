@@ -2,8 +2,11 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,9 +57,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="features" />
+                  <NavLink title={t("features")} />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink title={t("pricing")} />
                 </li>
 
                 <li className="nav-logo">
