@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="caption small-2 uppercase text-p3">
               {t("subtitle")}
             </div>
-            <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
+            <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-sm:text-[2.75rem] max-md:leading-12">
               {t("title")}
             </h1>
             <p className="max-w-440 mb-14 body-1 max-md:mb-10">
