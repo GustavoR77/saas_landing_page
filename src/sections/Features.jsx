@@ -1,11 +1,14 @@
 import { Element } from "react-scroll";
 import Button from "../components/Button.jsx";
 import { details, features } from "../constants/index.jsx";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation();
+
   return (
     <section>
-      <Element name="features">
+      <Element name={t("features")}>
         <div className="container">
           <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3">
             {features.map((feature) => (

@@ -1,8 +1,11 @@
 import { Element } from "react-scroll";
 import { links, logos } from "../constants";
 import { Marker } from "./Marker";
+import { useTranslation } from "react-i18next";  
 
 const Download = () => {
+  const { t } = useTranslation();
+
   return (
     <section>
       <Element
@@ -20,10 +23,7 @@ const Download = () => {
                   alt="xora"
                 />
               </div>
-              <p className="body-1 mb-10 max-w-md">
-                Try it now for free on iOS, Android, PC, Web - whatever your
-                flavor, we&apos;ve got you covered.
-              </p>
+              <p className="body-1 mb-10 max-w-md">{t("download")}</p>
               <ul className="flex flex-wrap items-center gap-6">
                 {links.map(({ id, url, icon }) => (
                   <li

@@ -1,7 +1,10 @@
 import LanguageSelector from "../components/LanguageSelector.jsx";
 import { socials } from "../constants/index.jsx";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="container py-10">
@@ -13,10 +16,10 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center sm:ml-auto">
             <p className="legal-after relative mr-9 text-p5 transition-all duration-500 hover:text-p1">
-              Privacy Policy
+              {t("privacyPolicy")}
             </p>
             <p className="text-p5 transition-all duration-500 hover:text-p1">
-              Therms of Use
+              {t("thermsOfUse")}
             </p>
           </div>
           <ul className="flex flex-1 justify-center gap-3 max-md:mt-10 md:justify-end">
