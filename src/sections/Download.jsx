@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { links, logos } from "../constants";
-import { Marker } from "./Marker";
+import { Marker } from "../components/Marker";
 import { useTranslation } from "react-i18next";  
 
 const Download = () => {

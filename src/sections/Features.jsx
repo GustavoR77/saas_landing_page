@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
-import Button from "../components/Button.jsx";
-import { details, features } from "../constants/index.jsx";
 import { useTranslation } from "react-i18next";
+import { details, features } from "../constants/index.jsx";
+import Button from "../components/Button.jsx";
 
 const Features = () => {
   const { t } = useTranslation();
