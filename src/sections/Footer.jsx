@@ -1,3 +1,4 @@
+import LanguageSelector from "../components/LanguageSelector.jsx";
 import { socials } from "../constants/index.jsx";
 
 const Footer = () => {
@@ -6,11 +7,8 @@ const Footer = () => {
       <div className="container py-10">
         <div className="flex w-full max-md:flex-col">
           <div className="small-compact flex flex-1 max-md:flex-col-reverse flex-wrap items-center justify-stretch max-md:gap-3 gap-5">
-            <div className="small-compact flex w-auto flex-wrap items-center justify-center gap-2 max-md:mb-3">
-              <img src="/images/flags/brazil.png" width={30} alt="brazil" />
-              <img src="/images/flags/usa.png" width={30} alt="usa" />
-              <img src="/images/flags/spain.png" width={30} alt="spain" />
-            </div>
+            <LanguageSelector />
+
             <p className="opacity-70">Copyright, Jorge Gustavo Ribeiro</p>
           </div>
           <div className="flex items-center justify-center sm:ml-auto">

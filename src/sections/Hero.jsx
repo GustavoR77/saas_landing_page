@@ -17,10 +17,10 @@ const Hero = () => {
               {t("title")}
             </h1>
             <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-              {t("hero-description")}
+              {t("heroDescription")}
             </p>
             <LinkScroll to="features" offset={-100} spy smooth>
-              <Button icon="/images/zap.svg">{t("hero-button")}</Button>
+              <Button icon="/images/zap.svg">{t("heroButton")}</Button>
             </LinkScroll>
           </div>
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
